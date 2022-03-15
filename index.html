@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+    <head>
+        <!--  -->
+        <meta charset="UTF-8" />
+
+        <!-- Title of site on Tab label -->
+        <title>Timmed Quizes!</title>
+
+        <!-- Favicon icon -->
+        <link rel="icon" href= "./assets/images/timer.ico" />
+
+        <!-- linking CSS file  -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <!-- scale site to viewport size -->
+        <meta name="viewport" content="width= device-width, initial-scale=1.0" />
+        
+        <!-- Linking jQuery Script -->
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+        <header >
+
+            <section class="boxes">
+
+                <!--  -->
+                <h1>Play a timed quiz!</h1>
+
+                <!--  -->
+                <button class="startQuizbtn" onclick="startQuiz()">Start!</button>
+            </section>
+           
+        </header>
+
+        <hr />
+
+        <main class="main">
+            <section class="quiz-container boxes">
+
+                <section class="question-container  ">
+
+                    <!--  -->
+                    <h3 class="showQ">Pending Questions</h3>
+                </section>
+
+                <section id="choices" class="answer-container showA">
+                    <!-- <h5 class ="showA gameEnd">Pending Answers</h5> -->
+                    
+                    <button id="btn1" class="choiceBtn"><span id="choice0"></span></button>
+                    <button id="btn2" class="choiceBtn"><span id="choice1"></span></button>
+                    <button id="btn3" class="choiceBtn"><span id="choice2"></span></button>
+                    <button id="btn4" class="choiceBtn"><span id="choice3"></span></button>
+                
+                </section>
+            </section>
+
+            <section class="timer-container boxes">
+
+                <!--  -->
+                <section class="timer-count">10
+                </section>
+
+                <!--  -->
+                <section class="penalty-visual">
+                </section>
+
+                <!--  -->
+                <section class="scorecard">
+
+                    <!--  -->
+                    <h2>Wins: <span class="win"> 0 </span> </h2>
+
+                    <!--  -->
+                    <h2>Losses: <span class="lose">0</span></h2>
+                </section>
+ 
+            </section>
+
+            <!--  -->
+            <section class="gameOver">
+            </section>
+  
+        </main>
+
+        <!--  -->
+        <script src="./assets/js/script.js"></script>
+        <!--  -->
+        <script src="./assets/js/questions.js"></script>
+    </body>
+    
+</html>
